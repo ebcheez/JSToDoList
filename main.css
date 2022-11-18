@@ -13,13 +13,13 @@
 /* create variables for common features */
 :root {
     /* colors */
-    --primary: #ea40a4;
-    --business: #3a82ee;
+    --primary: #5cb85c;
+    --business: #408140;
     --personal: var(--primary);
     --bright: #fff;
     --light: #eee;
     --grey: #888;
-    --dark: #313154;
+    --dark: #376e37;
     --danger: #ff5b57;
 
     /* shadows */
