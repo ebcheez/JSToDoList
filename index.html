@@ -4,7 +4,6 @@
 ;   Author: Tyler Potts
 ;   Modified by: Eric McCool
 ;   Description: A todo list web app stored locally.
-;   Link: https://www.youtube.com/watch?v=6eFwtaZf6zc
 ;   Works cited: Build a todo list app in HTML, CSS, & JavaScript with local 
 ;                storage in 2022 | JavaScript for beginners.
 ===============================================================================
@@ -26,12 +25,18 @@
 <body>
     <main class="app">
 
+        <!-- create a header to accept the username. -->
         <section class="greeting">
             <h2 class="title">
-                What's up, <input type="text" id="name" placeholder="Name here" />
+                What's up, <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Name here" />
             </h2>
-        </section>
+        </section><!-- End of header section. -->
 
+        <!-- Create an input box to accept a todo with header. -->
+        <!-- Put it in a form element with two radio buttons. -->
         <section class="create-todo">
             <h3>CREATE A TODO</h3>
             <form id="new-todo-form">
@@ -42,9 +47,11 @@
                     id="content" 
                     placeholder="e.g. make a video" />
 
+                <!-- Create the two radio buttons - business and personal. -->
                 <h4>Pick a category</h4>
                 <div class="options">
 
+                    <!-- The business button. -->
                     <label>
                         <input 
                             type="radio" 
@@ -53,8 +60,9 @@
                             value="business" />
                         <span class="bubble business"></span>
                         <div>Business</div>
-                    </label>
+                    </label><!-- End of business button. -->
 
+                    <!-- The personal button. -->
                     <label>
                         <input 
                             type="radio" 
@@ -63,17 +71,23 @@
                             value="personal" />
                         <span class="bubble personal"></span>
                         <div>Personal</div>
-                    </label>
+                    </label><!-- End of personal button. -->
 
-                </div>
+                </div><!-- End of option buttons  div. -->
 
+                <!-- Create the add todo button. -->
                 <input type="submit" value="Add todo" />
-            </form>
-        </section>
 
+            </form><!-- End of the form element. -->
+        </section><!-- End of the create-todo section. -->
+
+        <!-- Create the todo-list. -->
         <section class="todo-list">
             <h3>TODO LIST</h3>
             <div class="list" id="todo-list">
+                <!-- This is the dummy code used for styling purposes since 
+                     the todo list is empty at this point. The JS has not been
+                     written yet. Leave this here for debugging if necessary. -->
                 <!-- <div class="todo-item done">
                     <label>
                         <input type="checkbox" />
@@ -106,9 +120,9 @@
                     </div>
                 </div> -->
             </div>
-        </section>
+        </section><!-- End of the todo list section. -->
 
-    </main>
+    </main><!-- End of the main page element. -->
     <script src="main.js"></script>
 </body>
 </html>
