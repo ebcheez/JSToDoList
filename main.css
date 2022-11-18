@@ -24,8 +24,8 @@
 
     /* shadows */
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
-    --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);}
+    --business-glow: 0px 0px 4px rgba(64, 129, 64, 0.75);
+    --personal-glow: 0px 0px 4px rgba(55, 110, 55, 0.75);}
 
 /* set the box-sizing and font for all elements */
 * {
