@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
     const username = localStorage.getItem('username') || '';
     // set the username
     nameInput.value = username;
-    // target gets the element that triggered the event
+    // target gets the element that triggered the event (e is the event)
     nameInput.addEventListener('change', e => {
         localStorage.setItem('username', e.target.value);
     })
